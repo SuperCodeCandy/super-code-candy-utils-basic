@@ -1,0 +1,20 @@
+{
+  "name": "laodingtouUtils",
+  "version": "1.0.0",
+  "description": "laodingtou Utils",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "rollup": "^3.28.0",
+    "rollup-plugin-dts": "^6.0.0",
+    "rollup-plugin-typescript2": "^0.35.0"
+  }
+}
