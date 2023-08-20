@@ -1,19 +1,19 @@
 {
-  "name": "laodingtouUtils",
+  "name": "@laodingtou/utils",
   "version": "1.0.0",
   "description": "laodingtou Utils",
-  "main": "dist/cjx/index.cjs.js",
+  "main": "dist/cjs/index.cjs.js",
   "module": "dist/es/index.es.js",
-  "browser": "dist/umd/index.js",
+  "browser": "dist/umd/index.umd.js",
   "type": "module",
-    "scripts": {
+  "scripts": {
     "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs"
   },
-  "repository": { 
-  "type": "git",
-  "url": "git+https://github.com/z2244713679/laodingtou.utils/tree/master"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z2244713679/laodingtou.utils/tree/master"
   },
-  "homepage":"https://github.com/z2244713679/laodingtou.utils/tree/master",
+  "homepage": "https://github.com/z2244713679/laodingtou.utils/tree/master",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,5 +23,8 @@
     "rollup": "^3.28.0",
     "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-typescript2": "^0.35.0"
+  },
+  "dependencies": {
+    "@loadingtou": "^1.0.0"
   }
 }

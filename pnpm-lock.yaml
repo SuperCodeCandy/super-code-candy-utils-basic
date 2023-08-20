@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  laodingtou_utils:
+    specifier: ^1.0.0
+    version: 1.0.0
+
 devDependencies:
   fs:
     specifier: 0.0.1-security
@@ -178,6 +183,10 @@ packages:
     optionalDependencies:
       graceful-fs: 4.2.11
     dev: true
+
+  /laodingtou_utils@1.0.0:
+    resolution: {integrity: sha512-8bnYd9DRsin2/pL5CMHy9o/X2DZocg06Gr51TD8C4RBuH0zR445oaFnb1geqnG8aDCLEOI+6VZF8nf7Xtfx5Ew==}
+    dev: false
 
   /locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
