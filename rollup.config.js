@@ -51,15 +51,15 @@ const config = utilsFilePath
       input: "src/index.ts",
       output: [
         {
-          file: "./dist/index.es.js",
+          file: "./dist/es/index.es.js",
           format: "es",
         },
         {
-          file: "./dist/index.cjs.js",
+          file: "./dist/cjs/index.cjs.js",
           format: "cjs",
         },
         {
-          file: path.resolve(__dirname, "./dist/index.umd.js"),
+          file: path.resolve(__dirname, "./dist/umd/index.umd.js"),
           format: "umd",
           name: "laodingtouUtils",
         },
@@ -70,7 +70,7 @@ const config = utilsFilePath
       //打包声明文件
       input: "./src/index.ts",
       output: {
-        file: path.resolve(__dirname, "./dist/index.d.ts"),
+        file: path.resolve(__dirname, "./dist/es/index.d.ts"),
         format: "es",
       },
       plugins: [dts.default()],
