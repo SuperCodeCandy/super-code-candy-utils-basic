@@ -5,6 +5,7 @@
   "main": "dist/cjs/index.cjs.js",
   "module": "dist/es/index.es.js",
   "browser": "dist/umd/index.umd.js",
+  "types": "dist/es/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs"
@@ -23,8 +24,5 @@
     "rollup": "^3.28.0",
     "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-typescript2": "^0.35.0"
-  },
-  "dependencies": {
-    "@loadingtou": "^1.0.0"
   }
 }
