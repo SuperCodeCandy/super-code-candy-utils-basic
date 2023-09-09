@@ -1,20 +1,11 @@
 {
   "name": "@laodingtou/utils",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "laodingtou Utils",
-  "main": "dist/cjs/index.cjs.js",
-  "module": "dist/es/index.es.js",
-  "browser": "dist/umd/index.umd.js",
-  "types": "dist/es/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/z2244713679/laodingtou.utils/tree/master"
-  },
-  "homepage": "https://github.com/z2244713679/laodingtou.utils/tree/master",
   "keywords": [],
   "author": "",
   "license": "ISC",

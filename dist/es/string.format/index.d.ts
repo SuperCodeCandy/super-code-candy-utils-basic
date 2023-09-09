@@ -4,10 +4,6 @@
  * @param initValue 如果掉用JSON.parse方法失败，返回的兜底值 默认为{}
  * @returns 解析后的结果
  */
-export const jsonParse = <T>(str: string, initValue?: T): T | unknown => {
-  try {
-    return JSON.parse(str);
-  } catch {
-    return initValue ?? {};
-  }
-};
+declare const jsonParse: <T>(str: string, initValue?: T | undefined) => unknown;
+
+export { jsonParse };

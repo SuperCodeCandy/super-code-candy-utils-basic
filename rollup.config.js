@@ -3,7 +3,7 @@ import ts from "rollup-plugin-typescript2";
 import dts from "rollup-plugin-dts";
 import utilsFilePath from "./utils/file";
 
-/** 将文件名称转诶大写 */
+/** 将文件名称转成大写 */
 const fileNameToLocaleUppercase = (fileName) => fileName.replace(/(\.\w{1})/g, ($1) => $1.slice(1).toLocaleUpperCase());
 
 const config = utilsFilePath
