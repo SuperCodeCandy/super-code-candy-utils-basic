@@ -4,7 +4,8 @@
   "description": "laodingtou Utils",
   "type": "module",
   "scripts": {
-    "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs"
+    "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
+    "git":"npm run build && git add ."
   },
   "keywords": [],
   "author": "",

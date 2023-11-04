@@ -14,5 +14,33 @@ const jsonParse = (str, initValue) => {
         return initValue !== null && initValue !== void 0 ? initValue : {};
     }
 };
+/**
+ * @description 格式化指定标识转为大写 zh-cn -> zh-CN | zh-cn-cn zh-CN-CN
+ * @param str 需要格式化的字符串
+ * @param flag 标识字符 默认为 -
+ * @returns 转化后的数据
+ */
+const formatStringToUpperCase = (str = '', flag = '-') => str.replace(new RegExp(`${flag}\\w*`, 'gi'), (s) => s.toLocaleUpperCase());
+/**
+ *@description 将string转为大驼峰的格式 zh-cn -> ZhCn | zh-cn-cn -> ZhCnCN
+ * @param str 需要转换的字符
+ * @param flag 字符标识符
+ * @returns 转化后的数据
+ */
+const formatStringToBigHumpString = (str = '', flag = '-') => str
+    .replace(new RegExp(`(^.{1})|(${flag}\\w{1})`, 'gi'), ($1) => $1.toLocaleUpperCase())
+    .replace(new RegExp(`${flag}`, 'g'), '');
+/**
+ *@description 将string转为驼峰的格式 zh-cn -> zhCn | zh-cn-cn -> zhCnCN
+ * @param str 需要转换的字符
+ * @param flag 字符标识符
+ * @returns 转化后的数据
+ */
+const formatStringToHumpString = (str = '', flag = '-') => str
+    .replace(new RegExp(`(${flag}\\w{1})`, 'gi'), ($1) => $1.toLocaleUpperCase())
+    .replace(new RegExp(`${flag}`, 'g'), '');
 
+exports.formatStringToBigHumpString = formatStringToBigHumpString;
+exports.formatStringToHumpString = formatStringToHumpString;
+exports.formatStringToUpperCase = formatStringToUpperCase;
 exports.jsonParse = jsonParse;
