@@ -6,7 +6,8 @@
 	"scripts": {
 		"build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
 		"git:add": "npm run build && git add .",
-		"git:push": "npm version patch version:  && git push"
+		"push:p": "npm version patch -m 'version: update version to %s' && git push",
+		"push:m": "npm version major -m 'version: update version to %s' && git push"
 	},
 	"keywords": [
 		"supper-code-candy",
