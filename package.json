@@ -1,14 +1,17 @@
 {
-	"name": "@lht/utils",
+	"name": "@supper-code-candy/utils",
 	"version": "1.0.4",
-	"description": "lht Utils",
+	"description": "supper-code-candy Utils",
 	"type": "module",
 	"scripts": {
 		"build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
 		"git:add": "npm run build && git add .",
 		"git:push": "npm version patch version:  && git push"
 	},
-	"keywords": [],
+	"keywords": [
+		"supper-code-candy",
+		"utils"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
