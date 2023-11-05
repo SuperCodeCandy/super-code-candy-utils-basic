@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
 		"git:add": "npm run build && git add .",
-		"git:push": "npm version patch && git push"
+		"git:push": "npm version patch version:  && git push"
 	},
 	"keywords": [],
 	"author": "",
