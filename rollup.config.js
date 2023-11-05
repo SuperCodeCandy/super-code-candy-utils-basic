@@ -63,7 +63,7 @@ const config = utilsFilePath
 				{
 					file: path.resolve(__dirname, './dist/umd/index.umd.js'),
 					format: 'umd',
-					name: 'lhtXUtils',
+					name: 'supperCodeCandy',
 				},
 			],
 			plugins: [ts()],
