@@ -1,20 +1,26 @@
 {
-  "name": "@laodingtou/utils",
-  "version": "1.0.3",
-  "description": "laodingtou Utils",
-  "type": "module",
-  "scripts": {
-    "build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
-    "git":"npm run build && git add ."
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "fs": "0.0.1-security",
-    "path": "^0.12.7",
-    "rollup": "^3.28.0",
-    "rollup-plugin-dts": "^6.0.0",
-    "rollup-plugin-typescript2": "^0.35.0"
-  }
+	"name": "@ldt/utils",
+	"version": "1.0.4",
+	"description": "ldt Utils",
+	"type": "module",
+	"scripts": {
+		"build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
+		"git:add": "npm run build && git add .",
+		"git:push": "npm version patch && git push"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.9.1",
+		"@typescript-eslint/parser": "^6.9.1",
+		"eslint": "^8.53.0",
+		"eslint-plugin-jsonc": "^2.10.0",
+		"fs": "0.0.1-security",
+		"npm-version-bump": "^1.0.0",
+		"path": "^0.12.7",
+		"rollup": "^3.28.0",
+		"rollup-plugin-dts": "^6.0.0",
+		"rollup-plugin-typescript2": "^0.35.0"
+	}
 }
