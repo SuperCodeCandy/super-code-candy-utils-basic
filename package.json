@@ -1,7 +1,7 @@
 {
-	"name": "@ldt/utils",
+	"name": "@lht/utils",
 	"version": "1.0.4",
-	"description": "ldt Utils",
+	"description": "lht Utils",
 	"type": "module",
 	"scripts": {
 		"build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
