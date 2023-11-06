@@ -1,12 +1,14 @@
 {
 	"name": "@supper-code-candy/utils",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "supper-code-candy Utils",
 	"type": "module",
 	"scripts": {
-		"build": "node ./utils/getFile.js &&  rollup -c --bundleConfigAsCjs",
+		"build": "npm run auto && node ./scripts/getFile.js &&  rollup -c --bundleConfigAsCjs && npm run auto:es",
 		"git:add": "npm run build && git add .",
-		"git:push": "npm version patch version:  && git push"
+		"git:push": "npm version patch version:  && git push",
+		"auto": "node ./scripts/auto-export.js",
+		"auto:es": "node ./scripts/auto-export-es.js"
 	},
 	"keywords": [
 		"supper-code-candy",
@@ -19,7 +21,7 @@
 		"@typescript-eslint/parser": "^6.9.1",
 		"eslint": "^8.53.0",
 		"eslint-plugin-jsonc": "^2.10.0",
-		"fs": "0.0.1-security",
+		"fs": "^0.0.1-security",
 		"npm-version-bump": "^1.0.0",
 		"path": "^0.12.7",
 		"rollup": "^3.28.0",
