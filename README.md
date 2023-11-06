@@ -1,6 +1,11 @@
 # SuperCodeCandy
 | 一个Utils代码包, 现在共支持如下方法
 
+| [ESModule umd CommonJS - Package](https://github.com/SuperCodeCandy/super-code-candy-utils)
+
+| [ESModule Package](https://github.com/SuperCodeCandy/super-code-candy-utils)
+
+
 ## number系列
 ### getBetweenRandomNumber -  获取两个数之间的随机数
 ```ts

@@ -19,7 +19,7 @@ const init = () => {
 			return (
 				prev +
 				namespace +
-				` } from './${fileName}';` +
+				` } from './${fileName}/index.js';` +
 				(index === data.length - 1 ? '' : '\r\nexport { default as ')
 			);
 		}, 'export { default as ');
@@ -30,7 +30,7 @@ const init = () => {
 		);
 		fs.writeFile(
 			path.join(process.cwd(), './dist/es/index.d.ts'),
-			fileContent,
+			fileContent.replace(/\/index\/.js/g, ''),
 			(err) => {},
 		);
 	});
