@@ -1,7 +1,7 @@
 import path from 'path';
 import dts from 'rollup-plugin-dts';
 import ts from 'rollup-plugin-typescript2';
-import utilsFilePath from './utils/file';
+import utilsFilePath from './scripts/file';
 
 /** 将文件名称转成大写 */
 const fileNameToLocaleUppercase = (fileName) =>
