@@ -1,5 +1,5 @@
-# LoadingUtilsEsModule
-|loadingUtils的EsModule包, 现在共支持如下方法
+# SuperCodeCandy
+| 一个Utils代码包, 现在共支持如下方法
 
 ## number系列
 ### getBetweenRandomNumber -  获取两个数之间的随机数
