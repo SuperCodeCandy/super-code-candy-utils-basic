@@ -1,6 +1,6 @@
 {
 	"name": "@supper-code-candy/utils",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "supper-code-candy Utils",
 	"type": "module",
 	"scripts": {
