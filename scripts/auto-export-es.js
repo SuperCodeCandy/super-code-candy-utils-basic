@@ -28,9 +28,10 @@ const init = () => {
 			fileContent,
 			(err) => {},
 		);
+		console.log(fileContent.replace(/\/index\.js/g, ''));
 		fs.writeFile(
 			path.join(process.cwd(), './dist/es/index.d.ts'),
-			fileContent.replace(/\/index\/.js/g, ''),
+			fileContent.replace(/\/index\.js/g, ''),
 			(err) => {},
 		);
 	});
