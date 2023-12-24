@@ -1,13 +1,15 @@
 # SuperCodeCandy
-| 一个Utils代码包, 现在共支持如下方法
+
+| 一个 Utils 代码包, 现在共支持如下方法
 
 | [ESModule umd CommonJS - Package](https://github.com/SuperCodeCandy/super-code-candy-utils)
 
 | [ESModule Package](https://github.com/SuperCodeCandy/super-code-candy-utils)
 
+## number 系列
 
-## number系列
-### getBetweenRandomNumber -  获取两个数之间的随机数
+### getBetweenRandomNumber - 获取两个数之间的随机数
+
 ```ts
 /**
  * @description 获取两个数之间的随机数
@@ -15,21 +17,24 @@
  * @param maxNumber  最大数
  * @returns  获取到的值
  */
-const getBetweenRandomNumber: (minNumber: number, maxNumber: number) => number
+const getBetweenRandomNumber: (minNumber: number, maxNumber: number) => number;
 ```
 
-## string系列
+## string 系列
 
-### jsonParse - 解析jsonString
+### jsonParse - 解析 jsonString
 
 ```ts
 /**
  * @description 解析JSON串
  * @param str  需要解析的JSON串
  * @param initValue  如果掉用JSON.parse方法失败，返回的兜底值 默认为 {}
- * @returns 解析后的结果 
+ * @returns 解析后的结果
  */
-const jsonParse: <T extends Record<string, unknown>>(str: string, initValue?: T | undefined) => unknown
+const jsonParse: <T extends object>(
+	str: string,
+	initValue?: T | undefined,
+) => T | unknown;
 ```
 
 ### formatStringToUpperCase - 格式化指定标识转为大写
@@ -41,7 +46,7 @@ const jsonParse: <T extends Record<string, unknown>>(str: string, initValue?: T 
  * @param flag 标识字符 默认为 '-'
  * @returns 转化后的数据
  */
-const formatStringToUpperCase: (str?: string, flag?: string) => string
+const formatStringToUpperCase: (str?: string, flag?: string) => string;
 ```
 
 ### formatStringToBigHumpString - 将字符串格式化为大驼峰格式
@@ -53,7 +58,7 @@ const formatStringToUpperCase: (str?: string, flag?: string) => string
  * @param flag 字符标识符 默认值为 '-'
  * @returns 转化后的数据
  */
-const formatStringToBigHumpString: (str?: string, flag?: string) => string
+const formatStringToBigHumpString: (str?: string, flag?: string) => string;
 ```
 
 ### formatStringToHumpString - 将字符串格式化为驼峰格式
@@ -65,7 +70,7 @@ const formatStringToBigHumpString: (str?: string, flag?: string) => string
  * @param flag 字符标识符 默认值为 '-'
  * @returns 转化后的数据
  */
-const formatStringToHumpString: (str?: string, flag?: string) => string
+const formatStringToHumpString: (str?: string, flag?: string) => string;
 ```
 
 ## sleep 睡眠函数系列
@@ -90,5 +95,5 @@ const sleep: (timer?: number) => Promise<number>
  * @param maxTime 最大睡眠时间 默认值 5000
  * @returns Promise<number>
  */
-const randomSleep: (minTime?: number, maxTime?: number) => Promise<number>
+const randomSleep: (minTime?: number, maxTime?: number) => Promise<number>;
 ```

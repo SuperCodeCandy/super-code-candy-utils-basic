@@ -4,10 +4,7 @@
  * @param initValue 如果掉用JSON.parse方法失败，返回的兜底值 默认值 {}
  * @returns 解析后的结果
  */
-const jsonParse = <T extends Record<string, unknown>>(
-	str: string,
-	initValue?: T,
-): T | unknown => {
+const jsonParse = <T>(str: string, initValue?: T): T | unknown => {
 	try {
 		return JSON.parse(str);
 	} catch {
