@@ -1,7 +1,7 @@
 {
-	"name": "@supper-code-candy/utils",
+	"name": "@super-code-candy/utils",
 	"version": "1.0.5",
-	"description": "supper-code-candy Utils",
+	"description": "super-code-candy Utils",
 	"type": "module",
 	"scripts": {
 		"build": "npm run auto && node ./scripts/getFile.js &&  rollup -c --bundleConfigAsCjs && npm run auto:es",
@@ -11,7 +11,7 @@
 		"auto:es": "node ./scripts/auto-export-es.js"
 	},
 	"keywords": [
-		"supper-code-candy",
+		"super-code-candy",
 		"utils"
 	],
 	"author": "",
